@@ -87,6 +87,125 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+.content-wrapper {
+  width: 90%;
+}
+
+/* ---------- Base Header - Footer Styles ---------- */
+
+header,
+footer {
+  display: flex;
+}
+
+/* Header Styles */
+
+header {
+  justify-content: center;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {}
+
+.header-divider {}
+
+header nav {}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {}
+
+/* ---------- Mobile Styles - Homepage ---------- */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Features Styles */
+
+.features {
+  display: flex;
+  justify-content: center;
+
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Footer */
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer.social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Mobile Styles - About ---------- */
+
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- Mobile Styles - FAQ ---------- */
+
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +299,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +312,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -260,4 +380,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
