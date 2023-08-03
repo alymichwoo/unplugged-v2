@@ -90,19 +90,17 @@ textarea {
 
 .content-wrapper {
   width: 90%;
+  margin: 50px 0;
 }
 
 /* ---------- Base Header - Footer Styles ---------- */
 
-header,
-footer {
-  display: flex;
-}
-
 /* Header Styles */
 
 header {
+  display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -110,40 +108,94 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
-header figure {}
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
 
-.header-divider {}
-
-header nav {}
+header nav {
+  width: 60%;
+}
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
-header nav ul li {}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
 
 /* ---------- Mobile Styles - Homepage ---------- */
+
+/* Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
 }
 
+/* Aside */
+
 aside {
   display: flex;
   justify-content: center;
-
 }
 
-/* Features Styles */
+/* Features */
 
 .features {
   display: flex;
   justify-content: center;
+}
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -153,31 +205,22 @@ aside {
   flex-flow: row wrap;
 }
 
+/* Reviews */
+
 .reviews {
   display: flex;
   justify-content: center;
-
 }
 
-/* Footer */
-
-footer {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.reviews h2 {
+  margin-bottom: 40px;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.reviews h3 {
+  margin: 20px 0;
+  width: 55%;
 }
 
-footer.social p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* ---------- Mobile Styles - About ---------- */
 
@@ -189,6 +232,10 @@ footer.social p {
 .contact-section {
   display: flex;
   justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /* ---------- Mobile Styles - FAQ ---------- */
@@ -203,8 +250,16 @@ footer.social p {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
